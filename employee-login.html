@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Employee Login | TAJ Consultancy</title>
+  <meta name="description" content="Employee login for TAJ Consultancy real-time employment management.">
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrapper">
+      <a class="brand" href="index.html" aria-label="TAJ Consultancy home">
+        <span class="brand-mark">TAJ</span>
+        <span class="brand-text">
+          <strong>TAJ Consultancy</strong>
+          <small>Talent Acquisition Journey</small>
+        </span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="siteNav" aria-label="Open navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="site-nav" id="siteNav">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a class="active" href="login.html">Login</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="login-shell">
+    <div class="container login-grid">
+      <section class="login-form-card">
+        <p class="section-label">Employee Module</p>
+        <h1>Employee login</h1>
+        <p class="helper-text">Log in to view your assignment status, employment updates, notices, and role-specific information.</p>
+        <form data-login-form data-role-name="Employee" data-redirect="employee-dashboard.html">
+          <div class="form-group">
+            <label for="employee-id">Employee ID</label>
+            <input id="employee-id" name="employee-id" type="text" placeholder="Enter employee ID" required>
+          </div>
+          <div class="form-group">
+            <label for="employee-email">Registered Email</label>
+            <input id="employee-email" name="employee-email" type="email" placeholder="employee@company.com" required>
+          </div>
+          <div class="form-group">
+            <label for="employee-password">Password</label>
+            <input id="employee-password" name="employee-password" type="password" placeholder="Enter password" required>
+          </div>
+          <button class="btn btn-primary" type="submit">Login to Employee Module</button>
+          <p class="login-note" data-login-status>Demo frontend login. Backend authentication can be connected later.</p>
+        </form>
+      </section>
+
+      <aside class="info-panel">
+        <p class="section-label">Employee Access</p>
+        <ul class="muted-list">
+          <li>Check assignments and reporting lines</li>
+          <li>Review status and communication updates</li>
+          <li>Stay informed through a simple portal</li>
+        </ul>
+        <div class="role-actions">
+          <a class="btn btn-secondary" href="login.html">Back to Role Selection</a>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

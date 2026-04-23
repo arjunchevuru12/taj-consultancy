@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard | TAJ Consultancy</title>
+  <meta name="description" content="Admin dashboard for TAJ Consultancy employment workflows.">
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrapper">
+      <a class="brand" href="index.html"><span class="brand-mark">TAJ</span><span class="brand-text"><strong>TAJ Consultancy</strong><small>Talent Acquisition Journey</small></span></a>
+      <nav class="site-nav">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="login.html">Login</a>
+        <a class="active" href="admin-dashboard.html">Dashboard</a>
+      </nav>
+    </div>
+  </header>
+  <main class="dashboard-shell">
+    <div class="container dashboard-grid">
+      <section class="dashboard-overview">
+        <p class="section-label">Admin Dashboard</p>
+        <h1>Employment operations overview</h1>
+        <span class="status-chip">Admin session active</span>
+        <div class="metric-grid">
+          <article class="metric-card"><strong>24</strong><span>Active consultants</span></article>
+          <article class="metric-card"><strong>168</strong><span>Employees tracked</span></article>
+          <article class="metric-card"><strong>12</strong><span>Open requirements</span></article>
+        </div>
+        <div class="activity-list">
+          <article class="activity-item"><strong>User approvals pending</strong><span class="login-meta">Review new consultant and employee access requests.</span></article>
+          <article class="activity-item"><strong>Workflow status updates</strong><span class="login-meta">Monitor hiring progress across active client accounts.</span></article>
+          <article class="activity-item"><strong>Reporting summary</strong><span class="login-meta">Track module usage and current employment activity.</span></article>
+        </div>
+      </section>
+      <aside class="dashboard-card">
+        <p class="section-label">Quick Actions</p>
+        <div class="quick-links">
+          <div class="quick-link-card"><strong>Create new consultant</strong><span class="login-meta">Add consultant accounts and assign permissions.</span></div>
+          <div class="quick-link-card"><strong>Review employee records</strong><span class="login-meta">Check employment status and allocation details.</span></div>
+          <div class="quick-link-card"><strong>Export reports</strong><span class="login-meta">Generate workforce and requirement summaries.</span></div>
+        </div>
+      </aside>
+    </div>
+  </main>
+</body>
+</html>

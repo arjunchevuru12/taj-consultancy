@@ -273,7 +273,11 @@ textarea {
 .reason-card,
 .cta-box,
 .contact-form,
-.module-card {
+.module-card,
+.login-card,
+.dashboard-card,
+.login-form-card,
+.info-panel {
   background: #fff;
   border: 1px solid var(--color-border);
   border-radius: var(--radius-md);
@@ -314,6 +318,10 @@ textarea {
 
 .page-hero-illustration {
   margin-top: 2rem;
+}
+
+.page-hero.compact-hero {
+  padding-bottom: 2.5rem;
 }
 
 .feature-list {
@@ -373,7 +381,10 @@ textarea {
 .service-detail-grid,
 .content-grid,
 .modules-grid,
-.steps-grid {
+.steps-grid,
+.login-grid,
+.dashboard-grid,
+.portal-grid {
   display: grid;
   gap: 1.5rem;
 }
@@ -382,12 +393,19 @@ textarea {
 .reasons-grid,
 .service-detail-grid,
 .modules-grid,
-.steps-grid {
+.steps-grid,
+.portal-grid {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .content-grid {
   grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.login-grid,
+.dashboard-grid {
+  grid-template-columns: 1.1fr 0.9fr;
+  align-items: start;
 }
 
 .full-span {
@@ -399,7 +417,11 @@ textarea {
 .reason-card,
 .contact-form,
 .step-card,
-.module-card {
+.module-card,
+.login-card,
+.dashboard-card,
+.login-form-card,
+.info-panel {
   padding: 1.75rem;
 }
 
@@ -418,6 +440,127 @@ textarea {
   font-size: 0.85rem;
   font-weight: 800;
   margin-bottom: 0.9rem;
+}
+
+.login-card,
+.dashboard-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+
+.login-card h3,
+.dashboard-card h3 {
+  margin: 0;
+}
+
+.eyebrow {
+  display: inline-block;
+  font-size: 0.85rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-primary);
+}
+
+.login-meta,
+.dashboard-meta {
+  color: var(--color-text-soft);
+  font-size: 0.95rem;
+}
+
+.portal-grid .btn {
+  width: fit-content;
+}
+
+.login-shell,
+.dashboard-shell {
+  padding: 2rem 0 4rem;
+}
+
+.login-form-card h1,
+.dashboard-overview h1 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.75rem;
+  font-size: clamp(2rem, 4vw, 3rem);
+}
+
+.helper-text {
+  color: var(--color-text-soft);
+  margin: 0 0 1.25rem;
+}
+
+.login-note,
+.status-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  min-height: 34px;
+  padding: 0.35rem 0.8rem;
+  border-radius: 999px;
+  background: var(--color-accent);
+  color: var(--color-primary);
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.login-note {
+  margin-top: 1rem;
+}
+
+.quick-links,
+.metric-grid,
+.activity-list {
+  display: grid;
+  gap: 1rem;
+}
+
+.metric-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.metric-card {
+  padding: 1rem;
+  border: 1px solid var(--color-border);
+  border-radius: 14px;
+  background: linear-gradient(180deg, #ffffff 0%, #f8fbfd 100%);
+}
+
+.metric-card strong {
+  display: block;
+  font-size: 1.5rem;
+  color: var(--color-primary);
+}
+
+.metric-card span {
+  color: var(--color-text-soft);
+}
+
+.quick-link-card,
+.activity-item {
+  padding: 1rem 1.1rem;
+  border: 1px solid var(--color-border);
+  border-radius: 14px;
+  background: #fff;
+}
+
+.activity-item strong,
+.quick-link-card strong {
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+.muted-list {
+  margin: 0;
+  padding-left: 1.2rem;
+  color: var(--color-text-soft);
+}
+
+.role-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  margin-top: 1rem;
 }
 
 .step-card {
@@ -528,8 +671,15 @@ textarea {
   .content-grid,
   .modules-grid,
   .steps-grid,
+  .portal-grid,
   .footer-grid,
   .cta-box {
+    grid-template-columns: 1fr;
+  }
+
+  .login-grid,
+  .dashboard-grid,
+  .metric-grid {
     grid-template-columns: 1fr;
   }
 

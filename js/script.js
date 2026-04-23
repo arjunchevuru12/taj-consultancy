@@ -14,3 +14,23 @@ if (navToggle && siteNav) {
     });
   });
 }
+
+document.querySelectorAll("[data-login-form]").forEach((form) => {
+  form.addEventListener("submit", (event) => {
+    event.preventDefault();
+
+    const redirectTarget = form.getAttribute("data-redirect");
+    const roleName = form.getAttribute("data-role-name") || "User";
+    const status = form.querySelector("[data-login-status]");
+
+    if (status) {
+      status.textContent = `${roleName} login verified. Opening dashboard...`;
+    }
+
+    window.setTimeout(() => {
+      if (redirectTarget) {
+        window.location.href = redirectTarget;
+      }
+    }, 700);
+  });
+});

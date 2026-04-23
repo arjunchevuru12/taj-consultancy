@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Portal | TAJ Consultancy</title>
+  <meta name="description" content="Choose your role and log in to the TAJ Consultancy Admin, Client Consultant, or Employee module.">
+  <meta property="og:title" content="Login Portal | TAJ Consultancy">
+  <meta property="og:description" content="Role-based login access for Admin, Client Consultant, and Employee modules.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://example.com/login.html">
+  <meta property="og:image" content="assets/images/og-image.svg">
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrapper">
+      <a class="brand" href="index.html" aria-label="TAJ Consultancy home">
+        <span class="brand-mark">TAJ</span>
+        <span class="brand-text">
+          <strong>TAJ Consultancy</strong>
+          <small>Talent Acquisition Journey</small>
+        </span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="siteNav" aria-label="Open navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="site-nav" id="siteNav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+        <a class="active" href="login.html">Login</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero compact-hero">
+      <div class="container">
+        <p class="section-label">Role-Based Access</p>
+        <h1>Select your module login</h1>
+        <p class="page-hero-text">Each user type has a dedicated login flow built around their role requirements and dashboard responsibilities.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container portal-grid">
+        <article class="login-card">
+          <span class="eyebrow">Admin</span>
+          <h3>Admin Login</h3>
+          <p class="login-meta">For platform administrators managing access, jobs, reporting, and employment oversight.</p>
+          <a class="btn btn-primary" href="admin-login.html">Admin Access</a>
+        </article>
+        <article class="login-card">
+          <span class="eyebrow">Client Consultant</span>
+          <h3>Consultant Login</h3>
+          <p class="login-meta">For consultants working with client requirements, recruitment activity, and progress updates.</p>
+          <a class="btn btn-primary" href="consultant-login.html">Consultant Access</a>
+        </article>
+        <article class="login-card">
+          <span class="eyebrow">Employee</span>
+          <h3>Employee Login</h3>
+          <p class="login-meta">For employees checking assignments, status updates, communication, and employment information.</p>
+          <a class="btn btn-primary" href="employee-login.html">Employee Access</a>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h3>TAJ Consultancy</h3>
+        <p>Talent Acquisition Journey</p>
+        <p>Helping businesses manage real-time employment workflows with clarity.</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div>
+        <h4>Module Access</h4>
+        <a href="admin-login.html">Admin Login</a>
+        <a href="consultant-login.html">Consultant Login</a>
+        <a href="employee-login.html">Employee Login</a>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>&copy; 2026 TAJ Consultancy. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
