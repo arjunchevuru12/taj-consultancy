@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 420" role="img" aria-label="Consultancy hero illustration">
+  <rect width="640" height="420" rx="28" fill="#f6f9fc"/>
+  <rect x="34" y="40" width="572" height="340" rx="22" fill="#ffffff" stroke="#d9e2ec"/>
+  <rect x="72" y="86" width="210" height="234" rx="18" fill="#e8f1f8"/>
+  <circle cx="126" cy="138" r="28" fill="#9fbcd3"/>
+  <rect x="167" y="118" width="84" height="16" rx="8" fill="#0f3d63"/>
+  <rect x="167" y="146" width="68" height="12" rx="6" fill="#7b8794"/>
+  <rect x="100" y="200" width="146" height="12" rx="6" fill="#0f3d63"/>
+  <rect x="100" y="228" width="116" height="12" rx="6" fill="#7b8794"/>
+  <rect x="100" y="256" width="132" height="12" rx="6" fill="#c3d4e2"/>
+  <rect x="322" y="92" width="244" height="94" rx="18" fill="#0f3d63"/>
+  <rect x="350" y="118" width="92" height="14" rx="7" fill="#ffffff"/>
+  <rect x="350" y="144" width="160" height="12" rx="6" fill="#c2d4e5"/>
+  <rect x="322" y="204" width="244" height="116" rx="18" fill="#f7fafc" stroke="#d9e2ec"/>
+  <path d="M360 288l40-44 42 26 62-70 28 24" fill="none" stroke="#0f3d63" stroke-linecap="round" stroke-linejoin="round" stroke-width="10"/>
+  <circle cx="360" cy="288" r="8" fill="#0f3d63"/>
+  <circle cx="400" cy="244" r="8" fill="#0f3d63"/>
+  <circle cx="442" cy="270" r="8" fill="#0f3d63"/>
+  <circle cx="504" cy="200" r="8" fill="#0f3d63"/>
+  <circle cx="532" cy="224" r="8" fill="#0f3d63"/>
+</svg>
