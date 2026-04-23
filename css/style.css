@@ -272,7 +272,8 @@ textarea {
 .service-card,
 .reason-card,
 .cta-box,
-.contact-form {
+.contact-form,
+.module-card {
   background: #fff;
   border: 1px solid var(--color-border);
   border-radius: var(--radius-md);
@@ -371,6 +372,7 @@ textarea {
 .reasons-grid,
 .service-detail-grid,
 .content-grid,
+.modules-grid,
 .steps-grid {
   display: grid;
   gap: 1.5rem;
@@ -379,6 +381,7 @@ textarea {
 .card-grid,
 .reasons-grid,
 .service-detail-grid,
+.modules-grid,
 .steps-grid {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
@@ -395,8 +398,26 @@ textarea {
 .service-card,
 .reason-card,
 .contact-form,
-.step-card {
+.step-card,
+.module-card {
   padding: 1.75rem;
+}
+
+.module-card {
+  background: linear-gradient(180deg, #ffffff 0%, #f9fbfd 100%);
+}
+
+.module-badge {
+  display: inline-flex;
+  align-items: center;
+  min-height: 30px;
+  padding: 0.2rem 0.75rem;
+  border-radius: 999px;
+  background: var(--color-accent);
+  color: var(--color-primary);
+  font-size: 0.85rem;
+  font-weight: 800;
+  margin-bottom: 0.9rem;
 }
 
 .step-card {
@@ -505,6 +526,7 @@ textarea {
   .reasons-grid,
   .service-detail-grid,
   .content-grid,
+  .modules-grid,
   .steps-grid,
   .footer-grid,
   .cta-box {
